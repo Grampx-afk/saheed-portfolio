@@ -29,8 +29,6 @@ function markAllRead() {
   updateBadge(lastSeenMsgCount);
 }
 
-const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-
 // ── VISITOR TRACKING ──
 const now = new Date();
 const sessionStart = now.toLocaleString();
