@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saheed Durojaiye — Full-Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">SD.dev</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" onclick="openAdminLogin(); return false;" style="color:var(--blue);position:relative;">Admin <span id="msg-badge" style="display:none;position:absolute;top:-6px;right:-10px;background:#ff4d6d;color:#fff;font-size:0.6rem;width:16px;height:16px;border-radius:50%;display:none;align-items:center;justify-content:center;font-family:var(--mono);" id="msg-badge">0</span></a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-left">
+    <div class="hero-tag"><span class="dot-live"></span>Available for opportunities</div>
+    <h1>Saheed<br><span class="blue">Durojaiye</span></h1>
+    <p class="hero-bio">I'm an aspiring full-stack developer passionate about building elegant and high-performing web applications. I enjoy turning complex problems into simple, intuitive solutions through clean code and thoughtful user experience.</p>
+    <p class="hero-oneliner">// Turning ideas into interfaces that actually work.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="photo-wrap">
+      <div class="photo-accent"></div>
+      <div class="photo-border"></div>
+      <img src="photo.png" alt="Saheed Durojaiye"/>
+      <div class="photo-badge">
+        <strong>Saheed Durojaiye</strong>
+        Full-Stack Developer<br/>
+        <span>📍 Nigeria</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">About Me</div>
+    <h2>Who I Am</h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>Hey, I'm <strong>Saheed Durojaiye</strong> — a full-stack developer based in <strong>Nigeria</strong>, on a mission to build things that matter. I started my development journey and have been moving fast ever since.</p>
+      <p>My stack revolves around <strong>HTML, CSS, JavaScript</strong> on the frontend and <strong>Supabase</strong> on the backend. I build everything from responsive websites to API-powered tools, and I'm always exploring new technologies to sharpen my craft.</p>
+      <p>I deploy on <strong>Vercel</strong>, version control with <strong>Git</strong>, and I'm actively growing — aspiring to master more of the full-stack ecosystem every day. Check out my work on <a href="https://github.com/Grampx-afk" target="_blank">GitHub →</a></p>
+    </div>
+    <div class="stats-box">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Technologies</span></div>
+      <div class="stat"><span class="stat-num">🏆</span><span class="stat-label">GitHub Achievement</span></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Still Learning</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <div class="section-label">Tech Stack</div>
+    <h2>Skills & Tools</h2>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-pill"><span class="skill-dot"></span>HTML5</div>
+    <div class="skill-pill"><span class="skill-dot"></span>CSS3</div>
+    <div class="skill-pill"><span class="skill-dot"></span>JavaScript</div>
+    <div class="skill-pill"><span class="skill-dot"></span>Supabase</div>
+    <div class="skill-pill"><span class="skill-dot"></span>Git</div>
+    <div class="skill-pill"><span class="skill-dot"></span>Vercel</div>
+    <div class="skill-pill"><span class="skill-dot"></span>REST APIs</div>
+    <div class="skill-pill"><span class="skill-dot"></span>Responsive Design</div>
+    <div class="skill-pill"><span class="skill-dot"></span>GitHub</div>
+    <div class="skill-pill"><span class="skill-dot"></span>Learning More... 🚀</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <div class="section-label">Work</div>
+    <h2>Projects</h2>
+  </div>
+  <div class="projects-grid reveal">
+    <div class="project-card">
+      <div class="project-num">01 — PROJECT</div>
+      <h3>GrampX University</h3>
+      <p>A school website where individuals can receive news from the school and also get admitted. A full portal experience for students and administrators.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Supabase</span>
+      </div>
+      <a href="https://github.com/Grampx-afk/GrampX-University" target="_blank" class="project-link">View on GitHub →</a>
+      <div class="project-likes">
+        <button class="like-btn" onclick="toggleLike(this, 'grampx')">♥</button>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">02 — PROJECT</div>
+      <h3>Gamer Profile</h3>
+      <p>A responsive page where gamers can interact, showcase their profiles, and connect with other players in the community.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Supabase</span>
+      </div>
+      <a href="https://github.com/Grampx-afk/gamerprofile" target="_blank" class="project-link">View on GitHub →</a>
+      <div class="project-likes">
+        <button class="like-btn" onclick="toggleLike(this, 'gamer')">♥</button>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">03 — PROJECT</div>
+      <h3>Teemah Styles</h3>
+      <p>A real-time dashboard for a clothing brand — managing inventory, orders, and brand presence with a clean, modern interface.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Supabase</span>
+      </div>
+      <a href="https://github.com/Grampx-afk/teemahwebpag" target="_blank" class="project-link">View on GitHub →</a>
+      <div class="project-likes">
+        <button class="like-btn" onclick="toggleLike(this, 'teemah')">♥</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="reveal">
+    <div class="section-label">Updates</div>
+    <h2>Blog & Updates</h2>
+  </div>
+  <div id="blog-grid" class="blog-grid reveal">
+    <div class="blog-empty">// No posts yet. Check back soon — admin can add updates from the dashboard.</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Contact</div>
+    <h2>Get In Touch</h2>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <h3>Let's build something together.</h3>
+      <p>Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is always open.</p>
+      <div class="contact-links">
+        <a href="mailto:olamhidhe001@gmail.com" class="contact-link"><span class="contact-link-icon">✉</span>olamhidhe001@gmail.com</a>
+        <a href="https://github.com/Grampx-afk" target="_blank" class="contact-link"><span class="contact-link-icon">⌥</span>github.com/Grampx-afk</a>
+        <a href="https://linkedin.com/in/devgrampx" target="_blank" class="contact-link"><span class="contact-link-icon">in</span>linkedin.com/in/devgrampx</a>
+        <a href="https://wa.me/2349077051271" target="_blank" class="contact-link"><span class="contact-link-icon">💬</span>WhatsApp Me</a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="submitContact(event)">
+      <div class="form-group">
+        <label>NAME</label>
+        <input type="text" id="c-name" placeholder="Your name" required/>
+      </div>
+      <div class="form-group">
+        <label>EMAIL</label>
+        <input type="email" id="c-email" placeholder="your@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label>MESSAGE</label>
+        <textarea id="c-msg" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message →</button>
+      <div class="form-msg" id="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- SUPPORT SECTION -->
+<div style="background:var(--bg);border-top:1px solid var(--border);padding:3rem 6%;text-align:center;">
+  <p style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.6rem;">// Show some love</p>
+  <h3 style="font-size:1.4rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:0.5rem;">Enjoying my work?</h3>
+  <p style="color:var(--muted);font-size:0.92rem;margin-bottom:1.75rem;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.7;">If you like what you see, drop a ♥ — it means the world to an aspiring dev building from Nigeria 🇳🇬</p>
+  <button id="support-like-btn" onclick="toggleSupportLike()" style="
+    display:inline-flex;align-items:center;gap:0.6rem;
+    font-family:var(--mono);font-size:0.9rem;
+    background:transparent;border:1px solid var(--border);
+    color:var(--muted);padding:0.9rem 2rem;border-radius:2px;
+    cursor:pointer;transition:all 0.25s;letter-spacing:0.06em;
+  ">
+    <span id="support-heart" style="font-size:1.2rem;transition:transform 0.2s;">♥</span>
+    <span>Support Saheed</span>
+  </button>
+  <p id="support-msg" style="font-family:var(--mono);font-size:0.72rem;color:var(--blue);margin-top:0.85rem;opacity:0;transition:opacity 0.3s;">// Thank you! You're amazing 🚀</p>
+</div>
+
+<footer>
+  <span>© 2025 Saheed Durojaiye. Built with care in Nigeria 🇳🇬</span>
+  <span>Designed & coded by <a href="#">Grampx</a></span>
+</footer>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="admin-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modal-title">Admin Login</h3>
+      <button class="modal-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- LOGIN SCREEN -->
+      <div id="login-screen">
+        <div class="admin-login">
+          <div class="form-group">
+            <label>PASSWORD</label>
+            <input type="password" id="admin-pass" placeholder="Enter admin password"/>
+          </div>
+          <button class="btn btn-primary" onclick="checkAdminPass()">Login →</button>
+          <div class="form-msg" id="login-msg"></div>
+        </div>
+      </div>
+
+      <!-- DASHBOARD -->
+      <div id="admin-dashboard" style="display:none;">
+        <div class="admin-tabs">
+          <div class="admin-tab active" onclick="switchTab('messages')">Messages <span id="tab-badge" style="background:#ff4d6d;color:#fff;font-size:0.6rem;padding:0.1rem 0.4rem;border-radius:10px;display:none;margin-left:0.3rem;">0</span></div>
+          <div class="admin-tab" onclick="switchTab('blog')">Blog</div>
+          <div class="admin-tab" onclick="switchTab('stats')">Stats</div>
+        </div>
+
+        <!-- MESSAGES TAB -->
+        <div class="admin-panel active" id="tab-messages">
+          <div class="admin-section">
+            <h4 style="display:flex;justify-content:space-between;align-items:center;">Contact Messages <button onclick="markAllRead()" style="font-family:var(--mono);font-size:0.65rem;color:var(--muted);background:transparent;border:1px solid var(--border);padding:0.2rem 0.6rem;border-radius:2px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.color='var(--blue)';this.style.borderColor='var(--blue)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">✓ Mark all read</button></h4>
+            <div id="admin-messages">
+              <p style="font-family:var(--mono);font-size:0.78rem;color:var(--muted);">// Messages will appear here once Supabase is connected.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOG TAB -->
+        <div class="admin-panel" id="tab-blog">
+          <div class="admin-section">
+            <h4>New Post</h4>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div class="form-group">
+                <label>TITLE</label>
+                <input type="text" id="blog-title" placeholder="Post title"/>
+              </div>
+              <div class="form-group">
+                <label>CONTENT</label>
+                <textarea id="blog-content" placeholder="Write your update..."></textarea>
+              </div>
+              <div class="form-group">
+                <label>IMAGE (optional)</label>
+                <div id="blog-img-drop" onclick="document.getElementById('blog-img-input').click()" style="border:1px dashed var(--border);border-radius:2px;padding:1.2rem;text-align:center;cursor:pointer;transition:border-color 0.2s;font-family:var(--mono);font-size:0.75rem;color:var(--muted);">
+                  📷 Click to upload image
+                </div>
+                <input type="file" id="blog-img-input" accept="image/*" style="display:none;" onchange="previewBlogImg(this)"/>
+                <div id="blog-img-preview" style="display:none;margin-top:0.5rem;position:relative;">
+                  <img id="blog-img-thumb" style="width:100%;max-height:160px;object-fit:cover;border-radius:2px;border:1px solid var(--border);"/>
+                  <button onclick="clearBlogImg()" style="position:absolute;top:6px;right:6px;background:rgba(3,7,15,0.8);border:1px solid var(--border);color:var(--white);border-radius:2px;padding:0.2rem 0.5rem;font-size:0.7rem;cursor:pointer;">✕ Remove</button>
+                </div>
+              </div>
+              <button class="btn btn-primary" onclick="addBlogPost()">Publish Post →</button>
+              <div class="form-msg" id="blog-msg"></div>
+            </div>
+          </div>
+          <div class="admin-section">
+            <h4>Existing Posts</h4>
+            <div id="admin-posts">
+              <p style="font-family:var(--mono);font-size:0.78rem;color:var(--muted);">// Posts will appear here once Supabase is connected.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATS TAB -->
+        <div class="admin-panel" id="tab-stats">
+          <div class="admin-section">
+            <h4>Portfolio Stats</h4>
+            <div class="stats-box" style="margin-top:0.5rem;">
+              <div class="stat"><span class="stat-num" id="admin-visits">—</span><span class="stat-label">Total Visits</span></div>
+              <div class="stat"><span class="stat-num" id="admin-msgs">—</span><span class="stat-label">Messages</span></div>
+              <div class="stat"><span class="stat-num" id="admin-likes">—</span><span class="stat-label">Total Likes</span></div>
+              <div class="stat"><span class="stat-num" id="admin-posts-count">—</span><span class="stat-label">Blog Posts</span></div>
+            </div>
+          </div>
+          <div class="admin-section">
+            <h4>Visit Info</h4>
+            <div style="display:flex;flex-direction:column;gap:0.6rem;" id="visit-info">
+              <div class="msg-item"><strong>THIS SESSION</strong><p id="visit-session">—</p></div>
+              <div class="msg-item"><strong>FIRST VISIT</strong><p id="visit-first">—</p></div>
+              <div class="msg-item"><strong>LAST VISIT</strong><p id="visit-last">—</p></div>
+              <div class="msg-item"><strong>SESSIONS COUNT</strong><p id="visit-sessions">—</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
